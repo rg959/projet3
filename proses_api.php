@@ -13,8 +13,7 @@ $today = date('Y-m-d H:i:s');
 
 if($postjson[aksi]=="proses_register"){
 
-    $cekemail = mysqli_fetch_array(msqli_query($mysqli, "SELECT email_address FROM tb_users WHERE email_address='$postjson[
-        email_address]'"));
+    $cekemail = mysqli_fetch_array(msqli_query($mysqli, "SELECT email_address FROM tb_users WHERE email_address='$postjson[email_address]'"));
 
         if ($cekemail['email_address']==$postjson['email_address']) {
             $result = json_encode(array('success'=>false, 'msg'=>'Email is already taken'));
