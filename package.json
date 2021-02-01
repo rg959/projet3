@@ -1,36 +1,36 @@
 {
-    "name": "uber-node",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "directories": {
-        "doc": "doc",
-        "test": "test"
-    },
-    "scripts": {
-        "start": "pm2 kill && pm2 start app.js --watch && pm2 logs",
-        "test": "jest --forceExit"
-    },
-    "author": "Lechat Sébastien Razafimahatratra Emilie",
-    "license": "ISC",
-    "dependencies": {
-        "@googlemaps/google-maps-services-js": "^3.1.13",
-        "bcryptjs": "^2.4.3",
-        "cors": "^2.8.5",
-        "dotenv": "^8.2.0",
-        "express": "^4.17.1",
-        "express-rate-limit": "^5.2.3",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.9.26",
-        "node-geometry-library": "^1.2.3",
-        "nodemailer": "^6.4.11",
-        "pm2": "^4.5.0",
-        "uuid": "^8.3.0",
-        "validator": "^13.1.17"
-    },
-    "devDependencies": {
-        "env-cmd": "^10.1.0",
-        "jest": "^26.2.2",
-        "supertest": "^4.0.2"
-    }
+  "name": "uber-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "pm2 kill && pm2 start app.js --watch && pm2 logs",
+    "test": "jest --forceExit"
+  },
+  "author": "Lechat Sébastien Razafimahatratra Emilie",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.1.13",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.26",
+    "node-geometry-library": "^1.2.3",
+    "nodemailer": "^6.4.11",
+    "pm2": "^4.5.0",
+    "uuid": "^8.3.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^26.2.2",
+    "supertest": "^4.0.2"
+  }
 }

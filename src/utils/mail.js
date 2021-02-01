@@ -7,20 +7,20 @@ const sendEmail = (destination, subject, name, code) => {
         secure: false,
         requireTLS: true,
         auth: {
-            user: 'galouzi.rayan@gmail.com',
+            user: 'uber.eedsi.noreply@gmail.com',
             pass: process.env.EMAIL_PASSWORD
         }
     });
     const mailOptions = {
-        from: 'RAYAN - MAPS',
+        from: 'UBER - EEDSI',
         to: destination,
         subject: subject,
-        text: name + " : votre code de vérification RAYAN-MAPS est : " + code + ". \nCe code est valide pendant 10 minutes.\n\nSi vous n'avez pas effectué de demande ignorez ce message."
+        text: name + " : votre code de vérification UBER-EEDSI est : " + code + ". \nCe code est valide pendant 10 minutes.\n\nSi vous n'avez pas effectué de demande ignorez ce message."
     };
 
-    transporter.sendMail(mailOptions, function(error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-            throw ({ success: false, message: 'Internal server error : EMAIL' })
+            throw({success: false, message: 'Internal server error : EMAIL'})
         } else {
             // console.log('Email sent: ' + info.response);
             // console.log(mailOptions)
